@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Users List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color:#536387;;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      padding: 25px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 22px;
+      color: #111827;
+      margin: 0;
+    }
+
+    .header button {
+      padding: 10px 16px;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .header button:hover {
+      background: #1e40af;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead {
+      background-color: #f9fafb;
+    }
+
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    th {
+      color: #374151;
+      font-weight: 600;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    td {
+      color: #4b5563;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    tr:hover {
+      background-color: #f3f4f6;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #d1d5db;
+      object-fit: cover;
+    }
+
+    .name {
+      font-weight: 500;
+      color: #111827;
+    }
+
+    .role {
+      font-size: 12px;
+      color: #6b7280;
+    }
+
+    .status {
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      display: inline-block;
+    }
+
+    .active {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .inactive {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .actions button {
+      padding: 6px 10px;
+      border: 1px solid #d1d5db;
+      background: #fff;
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+
+    .actions button:hover {
+      background: #f3f4f6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>Users</h1>
+      <button>Add User</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Status</th>
+          <th>Joined</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            <div class="user-info">
+              <img src="https://wallpapers.com/images/hd/cool-neon-blue-profile-picture-u9y9ydo971k9mdcf.jpg" class="avatar">
+              <div>
+                <div class="name">Austine Kino Martinez</div>
+                <div class="role">Administrator</div>
+              </div>
+            </div>
+          </td>
+          <td>michael@example.com</td>
+          <td>Admin</td>
+          <td><span class="status active">Active</span></td>
+          <td>Jan 12, 2026</td>
+          <td class="actions">
+            <button>View</button>
+            <button>Edit</button>
+          </td>
+        </tr>
+
+          <td>
+            <div class="user-info">
+              <img src="https://tse2.mm.bing.net/th/id/OIP.gP87NSxukkO0EhTsHQXywwHaHa?cb=defcachec2&pid=ImgDet&w=474&h=474&rs=1&o=7&rm=3" class="avatar">
+              <div>
+                <div class="name">James Francis Rodriguez</div>
+                <div class="role">User</div>
+              </div>
+            </div>
+          </td>
+          <td>anna@example.com</td>
+          <td>User</td>
+          <td><span class="status inactive">Inactive</span></td>
+          <td>Dec 03, 2025</td>
+          <td class="actions">
+            <button>View</button>
+            <button>Edit</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</body>
+</html>
